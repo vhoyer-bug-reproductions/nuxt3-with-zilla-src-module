@@ -16,4 +16,12 @@ export default defineNuxtConfig({
   modules: [
     '@quero/zilla-vue/nuxt',
   ],
+  vite: {
+    optimizeDeps: {
+      include: [
+        'vue-prop-validation-helper',
+        'lodash',
+      ],
+    },
+  },
 })
